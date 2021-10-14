@@ -11,12 +11,6 @@
   },
   "resources": [
     {
-      "type": "Microsoft.OperationalInsights/workspaces",
-      "apiVersion": "2017-03-15-preview",
-      "name": "[parameters('workspaceName')]",
-      "location": "[parameters('location')]",
-      "resources": [
-        {
           "type": "savedSearches",
           "apiVersion": "2020-08-01",
           "name": "vimDnsAzureFirewall",
@@ -33,7 +27,5 @@
             "functionParameters": "starttime:datetime=datetime(null), endtime:datetime=datetime(null), srcipaddr:string='*', domain_has_any:dynamic=dynamic([]), responsecodename:string='*', response_has_ipv4:string='*', response_has_any_prefix:dynamic=dynamic([]), eventtype:string='Query'"
           }
         }
-      ]
-    }
   ]
 }
