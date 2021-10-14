@@ -8,7 +8,7 @@
 		"location": {
 			"type": "string",
 			"minLength": 1,
-			"defaultValue": [resourceGroup().location],
+			"defaultValue": "[resourceGroup().location]",
 			"metadata": {
 				"description": "Resource group to deploy solution resources"
 			}
