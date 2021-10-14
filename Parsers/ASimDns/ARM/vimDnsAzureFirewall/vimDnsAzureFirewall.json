@@ -4,9 +4,6 @@
   "parameters": {
     "workspaceName": {
       "type": "string"
-    },
-    "location": {
-      "type": "string"
     }
   },
   "resources": [
