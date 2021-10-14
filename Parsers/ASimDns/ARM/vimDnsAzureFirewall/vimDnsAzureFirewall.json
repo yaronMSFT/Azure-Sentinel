@@ -4,9 +4,6 @@
   "parameters": {
     "workspaceName": {
       "type": "string"
-    },
-    "location": {
-      "type": "string"
     }
   },
   "resources": [
@@ -14,7 +11,6 @@
       "type": "Microsoft.OperationalInsights/workspaces",
       "apiVersion": "2017-03-15-preview",
       "name": "[parameters('workspaceName')]",
-      "location": "[parameters('location')]",
       "resources": [
         {
           "type": "savedSearches",
